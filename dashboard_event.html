@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Drop Down Sidebar Menu | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!--Font Awesome CDN links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus'></i>
+            <span class="logo_name">CodingLab</span>
+        </div>
+        <ul class="nav-links">
+            <li class="bottun_create_event">
+                <a href="#" class="btn_logo">
+                    <i class="bx bx-plus"></i>
+                    <span class="btn_text link_name" style="color: #fff;">Create Event</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Create Event</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="link_name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Dashboard</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <span class="link_name">Event List</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Event List</a></li>
+                    </ul>
+                    <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+                </div>
+                <!--                 
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Event List</a></li>
+                    <li><a href="#">HTML & CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP & MySQL</a></li>
+                </ul> -->
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <span class="link_name">Speacker List</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Speacker List</a></li>
+                    </ul>
+                    <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+                </div>
+                <!-- <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Speacker List</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Login Form</a></li>
+                    <li><a href="#">Card Design</a></li>
+                </ul> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="link_name">Analytics</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Analytics</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-plug'></i>
+                        <span class="link_name">Ressurces List</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Ressurces List</a></li>
+                    </ul>
+
+                    <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+                </div>
+                <!--                 
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Ressurces List</a></li>
+                    <li><a href="#">UI Face</a></li>
+                    <li><a href="#">Pigments</a></li>
+                    <li><a href="#">Box Icons</a></li>
+                </ul> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-money'></i>
+                    <span class="link_name">Finance</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Finance</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-history'></i>
+                    <span class="link_name">History</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">Setting</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Setting</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="image/profile.jpg" alt="profileImg">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Prem Shahi</div>
+                        <div class="job">Web Desginer</div>
+                    </div>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-content" style="background-color: #fff;">
+            <i class='bx bx-menu'></i>
+            <span class="text">Drop Down Sidebar</span>
+            <div class="icons-container">
+                <i class='bx bx-message'></i>
+                <i class='bx bx-bell'></i>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-users"></i>
+                            <h5 class="card-title">Total Registration</h5>
+                            <div class="infos_row">
+                                <p class="card-text">1250+</p>
+                                <p class="card-text"><span class="badge badge-success">+24%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-users"></i>
+                            <h5 class="card-title">Total Expenses</h5>
+                            <div class="infos_row">
+                                <p class="card-text">20000 DA</p>
+                                <p class="card-text"><span class="badge badge-danger">-24%</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-users"></i>
+                            <h5 class="card-title">Total Attendant</h5>
+                            <div class="infos_row">
+                                <p class="card-text">700+</p>
+                                <p class="card-text"><span class="badge badge-danger">-34%</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-users"></i>
+                            <h5 class="card-title">Total registration</h5>
+                            <div class="infos_row">
+                                <p class="card-text">1250+</p>
+                                <p class="card-text"><span class="badge badge-danger">-34%</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="event_contain">
+            <div class="left">
+                <h2 class="titleevent">
+                    Event Shot
+                </h2>
+                <div class="photo_cansoul">
+                    <!-- Images go here -->
+                    <img src="/pressitation/mmt_page-0001.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-0002.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-0003.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-0004.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-0005.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-0006.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-0007.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-0008.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-0009.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-00010.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-00011.jpg" alt="" srcset="">
+                    <img src="/pressitation/mmt_page-00012.jpg" alt="" srcset="">
+
+
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <div class="right">
+                <h1 class="titlecircle">Total seats</h1>
+                <div class="circle" id="circle">
+                    <div class="center_text">
+                        <h2 id="totalSeats">Total seats</h2>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="percentage">80%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail_circle">
+                    <div class="blue_details">
+                        <span></span>
+                        <h4>Total seats</h4>
+                    </div>
+                    <div class="vieulette_details">
+                        <span></span>
+                        <h4>Total attends</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="space"></div>
+        <div class="speaker-grid">
+            <div class="speakers-list">
+                <div class="infoshowing">
+                    <h3 class="textsp">Speackers list</h3>
+                    <div class="viewall">
+                        <a href="#">View all</a>
+                    </div>
+                </div>
+                <div class="space1"></div>
+                <div class="speaker">
+                    <img src="speaker-image.jpg" alt="Speaker image">
+                    <div class="speaker-info">
+                        <span class="speaker-name">Robert Fox</span>
+                        <span class="speaker-role">Organizer</span>
+                    </div>
+                    <div class="speaker-period">
+                        <ul>
+                            <li>
+                                <h3><span>Period</span></h3>
+                            </li>
+                            <li><span>27-31 Nov</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="speaker-image.jpg" alt="Speaker image">
+                    <div class="speaker-info">
+                        <span class="speaker-name">Robert Fox</span>
+                        <span class="speaker-role">Organizer</span>
+                    </div>
+                    <div class="speaker-period">
+                        <ul>
+                            <li>
+                                <h3><span>Period</span></h3>
+                            </li>
+                            <li><span>27-31 Nov</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="speaker-image.jpg" alt="Speaker image">
+                    <div class="speaker-info">
+                        <span class="speaker-name">Robert Fox</span>
+                        <span class="speaker-role">Organizer</span>
+                    </div>
+                    <div class="speaker-period">
+                        <ul>
+                            <li>
+                                <h3><span>Period</span></h3>
+                            </li>
+                            <li><span>27-31 Nov</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <img src="speaker-image.jpg" alt="Speaker image">
+                    <div class="speaker-info">
+                        <span class="speaker-name">Robert Fox</span>
+                        <span class="speaker-role">Organizer</span>
+                    </div>
+                    <div class="speaker-period">
+                        <ul>
+                            <li>
+                                <h3><span>Period</span></h3>
+                            </li>
+
+                            <li><span>27-31 Nov</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="speakers-list">
+                <div class="infoshowing">
+                    <h3 class="textsp">Speackers list</h3>
+                    <div class="viewall">
+                        <a href="#">View all</a>
+                    </div>
+                </div>
+                <div class="space1"></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Kevin Levrone</td>
+                            <td>kevenlevr@...</td>
+                            <td>Pending</td>
+                            <td>
+                                <svg id="options-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
+                                <ul id="options-list" class="listdesign" style="display: none;">
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kevin Levrone</td>
+                            <td>kevenlevr@...</td>
+                            <td>Pending</td>
+                            <td>
+                                <svg id="options-icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
+                                <ul id="options-list2" class="listdesign" style="display: none;">
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kevin Levrone</td>
+                            <td>kevenlevr@...</td>
+                            <td>Pending</td>
+                            <td>
+                                <svg id="options-icon3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
+                                <ul id="options-list3" class="listdesign" style="display: none;">
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kevin Levrone</td>
+                            <td>kevenlevr@...</td>
+                            <td>Pending</td>
+                            <td>
+                                <svg id="options-icon4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
+                                <ul id="options-list4" class="listdesign" style="display: none;">
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Kevin Levrone</td>
+                            <td>kevenlevr@...</td>
+                            <td>Pending</td>
+                            <td>
+                                <svg id="options-icon5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
+                                <ul id="options-list5" class="listdesign" style="display: none;">
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script>
+        function changeImages() {
+            const photoContainer = document.querySelector('.photo_cansoul');
+            const images = photoContainer.querySelectorAll('img');
+            let currentIndex = 0;
+
+            setInterval(() => {
+                // Hide the current image
+                images[currentIndex].style.display = 'none';
+
+                // Move to the next image or loop back to the first image if at the end
+                currentIndex = (currentIndex + 1) % images.length;
+
+                // Show the next image
+                images[currentIndex].style.display = 'block';
+            }, 500); // Change images every 2 seconds
+        }
+
+        // Call the function to start changing images
+        changeImages();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var icon = document.getElementById("options-icon");
+            var optionsList = document.getElementById("options-list");
+
+            icon.addEventListener("click", function() {
+                if (optionsList.style.display === "none") {
+
+                    optionsList.style.display = "block";
+                } else {
+                    optionsList.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var icon = document.getElementById("options-icon2");
+            var optionsList = document.getElementById("options-list2");
+
+            icon.addEventListener("click", function() {
+                if (optionsList.style.display === "none") {
+
+                    optionsList.style.display = "block";
+                } else {
+                    optionsList.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var icon = document.getElementById("options-icon3");
+            var optionsList = document.getElementById("options-list3");
+
+            icon.addEventListener("click", function() {
+                if (optionsList.style.display === "none") {
+
+                    optionsList.style.display = "block";
+                } else {
+                    optionsList.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var icon = document.getElementById("options-icon4");
+            var optionsList = document.getElementById("options-list4");
+
+            icon.addEventListener("click", function() {
+                if (optionsList.style.display === "none") {
+
+                    optionsList.style.display = "block";
+                } else {
+                    optionsList.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var icon = document.getElementById("options-icon5");
+            var optionsList = document.getElementById("options-list5");
+
+            icon.addEventListener("click", function() {
+                if (optionsList.style.display === "none") {
+
+                    optionsList.style.display = "block";
+                } else {
+                    optionsList.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+
+</html>
